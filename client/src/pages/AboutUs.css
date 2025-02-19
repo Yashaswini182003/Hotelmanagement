@@ -1,0 +1,56 @@
+body
+{
+  /* background: linear-gradient(to right, #004ff9, #000000); */
+  background-color: #fcd5ce;
+}
+
+.aboutus {
+     /* background-color:white;  */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+     /* background: linear-gradient(to right, #004ff9, #000000);  */
+  }
+
+  .aboutus img 
+  {
+    margin-top: 150px;
+    margin-left: 150px;
+    border-radius: 20px;
+  }
+
+  
+  .p4 {
+       
+    
+         width: 400px;
+         height: auto;
+         font-size: 25px;
+         color:black;
+         margin-left: 850px;
+         margin-top: -400px;
+         font-family: "Caveat", serif;
+         
+
+    }
+
+  
+
+  .p4 .edo1
+  {
+    color: #004ff9; /* Blue color for 'edo' */
+    font-family: "Lilita One", serif;
+      
+  }
+
+  .p4 .Sp1
+  {
+    color: white;
+    font-family: "Lilita One", serif;
+
+  }
+  
+
+  
+  
+
+  

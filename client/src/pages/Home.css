@@ -1,0 +1,68 @@
+
+.home {
+    background-image: url('hotel-2.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+    top: 0;
+    
+  }
+
+  .home h1 {
+    font-size: 60px; /* Makes the heading big */
+    font-weight: bold;
+    color: white; /* Adjust color based on background */
+    width: 50%; /* Limits width to force text to break into two lines */
+    text-align: left; /* Aligns text to the left */
+    line-height: 1.2; /* Adjusts spacing between lines */
+    margin-left: 150px; /* Adds some left spacing */
+    position: absolute;
+    margin-top: 230px;
+    
+  }
+
+  .p1 {
+    position: absolute; /* Position it relative to the nearest positioned ancestor */
+    top: 20px; /* Distance from the top */
+    left: 80px; /* Distance from the left */
+    font-size: 30px; /* Adjust text size */
+    font-weight: bold;
+    color: white; /* Adjust color based on background */
+    font-family: "Lilita One", serif;
+  }
+
+  .p1 .blue-text {
+    color: #004ff9; /* Blue color for 'edo' */
+    font-family: "Lilita One", serif;
+  }
+
+   .p2 {
+    font-size: 24px; /* Slightly larger font for emphasis */
+    font-weight: bold;
+    color: white; /* Adjust based on background */
+    text-align: left; /* Align to the left */
+    /* margin-top: 20px;  */
+    margin-top: 390px;
+    position: absolute;
+    margin-left: 150px;
+  } 
+  
+  .p3 {
+    font-size: 18px; /* Standard readable font size */
+    color: #f0f0f0; /* Light color for readability */
+    line-height: 1.6; /* Improve spacing between lines */
+    text-align: left; /* Align to the left */
+    width: 60%; /* Limit width for better readability */
+    margin-top: 10px; /* Space below p2 */
+    margin-top: 390px;
+    position: absolute;
+    margin-left: 150px;
+  }
+  
+  
+  
+  

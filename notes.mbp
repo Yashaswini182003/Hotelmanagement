@@ -1,0 +1,71 @@
+<h2 className='heading13'> Hotel List </h2>
+      <ul>
+         {hotels.map((hotel, index) => (
+            <li key={index}>
+
+              <div className='card'>
+                <img
+                  src={`http://localhost:3000/uploads/${hotel.hotelImage}`}
+                  alt={hotel.hotelName}
+                  className='hotel-image'
+                  
+                  />
+
+                  <div className='card-content'>
+                    <h3 className='hotel-name'>{hotel.hotelName}</h3>
+                    <button onClick={() => handleDelete(hotel._id)} className='button2'> Delete </button>
+
+                  </div>
+              </div>
+
+            </li>
+         ))}
+
+      </ul>
+
+
+      /* Hotel List Styles */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  
+
+   .card {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    margin-top: 750px;
+    margin-left: 10px; 
+    position: absolute;
+    /* gap: 20px; */
+    flex-wrap: wrap;  /* Ensures responsiveness on smaller screens */
+    gap: 20px; /* Adds spacing between cards */
+    justify-content: center; /* Centers the cards */
+  }
+  
+  .hotel-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .card-content {
+    margin-top: 10px;
+  }
+  
+  .button2 {
+    background-color: red;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
