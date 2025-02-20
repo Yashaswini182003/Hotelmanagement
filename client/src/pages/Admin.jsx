@@ -144,7 +144,7 @@ const Admin = () => {
     {hotels.map((hotel) => (
     <div key={hotel._id} className="card">
       <img
-        src={`http://localhost:3000/uploads/${hotel.hotelImage}`}
+        src={`${import.meta.env.VITE_BACKEND_URL}/uploads/${hotel.hotelImage}`}
         alt={hotel.hotelName}
         className="hotel-image"
       />
