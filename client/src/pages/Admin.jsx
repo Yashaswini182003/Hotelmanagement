@@ -18,7 +18,7 @@ const Admin = () => {
        try 
        {
 
-        const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/admin/bookings`);
+        const response = await axios.get(`${import.meta.env.VITE_FrontEnd_URL}/api/admin/bookings`);
         setBookings(response.data);
 
        }
@@ -32,7 +32,7 @@ const Admin = () => {
     const fetchHotels = async () => {
       try 
       {
-          const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/hotels`);
+          const response = await axios.get(`${import.meta.env.VITE_FrontEnd_URL}/api/hotels`);
           setHotels(response.data);
         
       } catch (error) 
@@ -51,7 +51,7 @@ const Admin = () => {
 
     try 
     {
-      await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/hotels/`, formData, {
+      await axios.post(`${import.meta.env.VITE_FrontEnd_URL}/api/hotels/`, formData, {
         headers: {
           'Content-Type' : 'multipart/form-data',
         },
@@ -69,7 +69,7 @@ const Admin = () => {
   const handleDelete = async (id) => {
    try
     {
-       await axios.delete(`${import.meta.env.VITE_BACKEND_URL}/api/hotels/${id}`)
+       await axios.delete(`${import.meta.env.VITE_FrontEnd_URL}/api/hotels/${id}`)
        fetchHotels();
       
    } 
@@ -144,7 +144,7 @@ const Admin = () => {
     {hotels.map((hotel) => (
     <div key={hotel._id} className="card">
       <img
-        src={`http://localhost:3000/uploads/${hotel.hotelImage}`}
+        src={`${import.meta.env.VITE_FrontEnd_URL}/uploads/${hotel.hotelImage}`}
         alt={hotel.hotelName}
         className="hotel-image"
       />
