@@ -1,3 +1,8 @@
+nav {
+  position: relative;
+  z-index: 1000; /* Higher than other elements */
+}
+
 .navbar {
     position: absolute; /* Places navbar over the background */
     top: 0; /* Aligns it to the top */
